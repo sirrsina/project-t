@@ -274,32 +274,32 @@ def biskiet():
         global i
         i = i-1
         if i < 0 :
-            btn_biskiet4.config(text=f"apple-cake = {0}")
+            btn_biskiet1.config(text=f"apple-cake = {0}")
             btn_biskietkharid.config(text=f"soma {0} apple va {j} orange cake va {k} banana-cake va {l} gilas cake darid")
 
         else:
-            btn_biskiet4.config(text=f"apple-cake =  {i}")
+            btn_biskiet1.config(text=f"apple-cake =  {i}")
             btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {k} banana-cake va {l} gilas cake darid")
     def biskietm2():
         global j
         j = j-1
         if j < 0 :
-            btn_biskiet4.config(text=f"orange-cake = {0}")
+            btn_biskiet2.config(text=f"orange-cake = {0}")
             btn_biskietkharid.config(text=f"soma {i} apple va {0} orange cake va {k} banana-cake va {l} gilas cake darid")
 
         else:
-            btn_biskiet4.config(text=f"orange-cake =  {j}")
+            btn_biskiet2.config(text=f"orange-cake =  {j}")
             btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {k} banana-cake va {l} gilas cake darid")
  
     def biskietm3():
         global k
         k = k-1
         if k < 0 :
-            btn_biskiet4.config(text=f"banana-cake = {0}")
+            btn_biskiet3.config(text=f"banana-cake = {0}")
             btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {0} banana-cake va {0} gilas cake darid")
 
         else:
-            btn_biskiet4.config(text=f"banana-cake =  {k}")
+            btn_biskiet3.config(text=f"banana-cake =  {k}")
             btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {k} banana-cake va {l} gilas cake darid")
     def biskietm4():
         global l
@@ -320,9 +320,9 @@ def biskiet():
         if i < 0 :
             i=0
 
-            btn_biskiet4.config(text=f"apple-biskiet = {i}")
+            btn_biskiet1.config(text=f"apple-biskiet = {i}")
         else:
-            btn_biskiet4.config(text=f"apple-biskiet = {i}")        
+            btn_biskiet1.config(text=f"apple-biskiet = {i}")        
         btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {k} banana-cake va {l} gilas cake darid")
     def biskiet2():
         global j
@@ -330,9 +330,9 @@ def biskiet():
         if j < 0 :
             j=0
 
-            btn_biskiet4.config(text=f"orange-cake = {j}")
+            btn_biskiet2.config(text=f"orange-cake = {j}")
         else:
-            btn_biskiet4.config(text=f"orange-cake = {j}")        
+            btn_biskiet2.config(text=f"orange-cake = {j}")        
         btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {k} banana-cake va {l} gilas cake darid")
     def biskiet3():
         global k
@@ -340,9 +340,9 @@ def biskiet():
         if k < 0 :
             k=0
 
-            btn_biskiet4.config(text=f"banana-biskiet = {k}")
+            btn_biskiet3.config(text=f"banana-biskiet = {k}")
         else:
-            btn_biskiet4.config(text=f"banana-biskiet = {k}")        
+            btn_biskiet3.config(text=f"banana-biskiet = {k}")        
         btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {k} banana-cake va {l} gilas cake darid")
 
     def biskiet4():
@@ -408,22 +408,88 @@ def biskiet():
 def tanagholat():
     global tanagholat
     tanagholat = combo_filter.get()
+    def tanagholatm():
+        global m
+        m = m-1
+        if m < 0 :
+            btn_tanagholat1.config(text=f"anjil = {0}")
+            btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
+        else:
+            btn_tanagholat1.config(text=f"anjil = {m}")
+            btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
+    def tanagholatm2():
+        global n
+        n = n-1
+        if n < 0 :
+            btn_tanagholat2.config(text=f"fandogh = {0}")
+            btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
+        else:
+            btn_tanagholat2.config(text=f"fandogh = {n}")
+            btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
+    def tanagholatm3():
+        global o
+        o = o-1
+        if o < 0 :
+            btn_tanagholat3.config(text=f"peste = {0}")
+            btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
+        else:
+            btn_tanagholat3.config(text=f"peste = {o}")
+            btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
+
+    def tanagholatm4():
+        global p
+        p = p-1
+        if p < 0 :
+            btn_tanagholat4.config(text=f"badoom = {0}")
+            btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
+
+        else:
+            btn_tanagholat4.config(text=f"badoom =  {p}")
+            btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
+
+        
+
+
     def tanagholat1():
-        global i
-        i = i+1
-        btn_tanagholatkharid.config(text=f"soma {m} apple va {n} orange  va {o} banana va {p} cherry  darid")
+        global m
+        m = m+1
+        if m < 0 :
+            m=0
+
+            btn_tanagholat1.config(text=f"ajil = {m}")
+        else:
+            btn_tanagholat1.config(text=f"ajil = {m}")        
+        btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
     def tanagholat2():
-        global j
-        j = j+1
-        btn_tanagholatkharid.config(text=f"soma {m} apple va {n} orange  va {o} banana va {p} cherry  darid")
+        global n
+        n = n+1
+        if n < 0 :
+            n=0
+
+            btn_tanagholat2.config(text=f"fandogh  = {n}")
+        else:
+            btn_tanagholat2.config(text=f"fandogh cake = {n}")        
+        btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh  va {o} peste va {p} badoom darid")
     def tanagholat3():
-        global k
-        k = k+1
-        btn_tanagholatkharid.config(text=f"soma {m} apple va {n} orange  va {o} banana va {p} cherry  darid")
+        global o
+        o = o+1
+        if o < 0 :
+            o=0
+
+            btn_tanagholat3.config(text=f"peste = {o}")
+        else:
+            btn_tanagholat3.config(text=f"peste = {o}")        
+        btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
     def tanagholat4():
-        global l
-        l = l+1
-        btn_tanagholatkharid.config(text=f"soma {m} apple va {n} orange  va {o} banana va {p} cherry  darid")
+        global p
+        p = p+1
+        if p < 0 :
+            p=0
+
+            btn_tanagholat4.config(text=f"badoom = {p}")
+        else:
+            btn_tanagholat4.config(text=f"badoom = {p}")        
+        btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
     if combo_filter2.get()=="tanagholat":
         
         tanagholat_root = Toplevel(root)
@@ -431,33 +497,45 @@ def tanagholat():
         tanagholat_root.title("tanagholat")
         tanagholat_root.config(background='#473E66')
         btn_tanagholat_title = Label(tanagholat_root, text='tanagholat Pack', bg="white")
-        btn_tanagholat1 = Label(tanagholat_root, text='apple-tanagholat')
-        btn_label_tanagholat1 = Button(tanagholat_root, text="Click for buy", command=tanagholat1)
-        btn_tanagholat2 = Label(tanagholat_root  , text='orange-tanagholat')
-        btn_label_tanagholat2 = Button(tanagholat_root, text="Click for buy", command=tanagholat2)
-        btn_tanagholat3 = Label(tanagholat_root, text='banana-tanagholat')
-        btn_label_tanagholat3 = Button(tanagholat, text="Click for buy", command=tanagholat3)
-        btn_tanagholat4 = Label(tanagholat_root, text='cherry-tanagholat')
-        btn_label_tanagholat4 = Button(tanagholat_root, text="Click for buy", command=tanagholat4)
-        btn_tanagholatkharid = Button(tanagholat_root, text=f"shoma 0 apple va 0 orange cake va 0 banana va 0 cherry darid", command=f"shoma {biskiet1}apple va {biskiet2} orange cake va {biskiet3} banana-cake va {biskiet4} gilas cake darid")
+        btn_tanagholat1 = Label(tanagholat_root, text='anjil')
+        btn_label_tanagholat1 = Button(tanagholat_root, text="+", command=tanagholat1)
+        btn_label_tanagholatm = Button(tanagholat_root, text="-", command=tanagholatm)
+
+        btn_tanagholat2 = Label(tanagholat_root, text='fandogh')
+        btn_label_tanagholat2 = Button(tanagholat_root, text="+", command=tanagholat2)
+        btn_label_tanagholatm2 = Button(tanagholat_root, text="-", command=tanagholatm2)
+
+        btn_tanagholat3 = Label(tanagholat_root, text='peste')
+        btn_label_tanagholat3 = Button(tanagholat_root, text="+", command=tanagholat3)
+        btn_label_tanagholatm3 = Button(tanagholat_root, text="-", command=tanagholatm3)
 
 
-        btn_label_tanagholat1.place(x=10, y=150)
-        btn_tanagholat1.place      (x=15, y=100)
+        btn_tanagholat4 = Label(tanagholat_root, text='badoom')
+        btn_label_tanagholat4 = Button(tanagholat_root, text="+", command=tanagholat4)
+        btn_label_tanagholatm4 = Button(tanagholat_root, text="-", command=tanagholatm4)
 
-        btn_label_tanagholat2.place(x=10, y=450)
-        btn_tanagholat2.place      (x=12, y=400)
+        btn_tanagholatkharid = Button(tanagholat_root, text=f"shoma 0 anjil va 0 fandogh va 0 peste va 0 badoom darid", command=f"shoma {tanagholat1}anjil va {tanagholat2} fandogh va {tanagholat3} peste va {tanagholat4} badoom darid")
 
-        btn_label_tanagholat3.place(x=300, y=150)
-        btn_tanagholat3.place      (x=300, y=100)
+        btn_label_tanagholat1.place (x=10, y=150)
+        btn_label_tanagholatm.place (x=60, y=150)
+        btn_tanagholat1.place       (x=15, y=100)
 
-        btn_label_tanagholat4.place(x=300, y=450)
-        btn_tanagholat4.place      (x=310, y=400)
+        btn_label_tanagholat2.place (x=10, y=450)
+        btn_label_tanagholatm2.place(x=60, y=450)
+        btn_tanagholat2.place       (x=12, y=400)
 
-        btn_tanagholatkharid.place(x=30, y=600)
+        btn_label_tanagholat3.place (x=300, y=150)
+        btn_label_tanagholatm3.place(x=350, y=150)
+        btn_tanagholat3.place       (x=300, y=100)
+
+        btn_label_tanagholat4.place (x=300, y=450)
+        btn_label_tanagholatm4.place(x=350, y=450)
+        btn_tanagholat4.place       (x=310, y=400)
+
+        btn_tanagholatkharid.place(x=10, y=600)
         btn_tanagholat_title.place(x=170,y=20)   
         root.withdraw()
-        print("nice")
+        print("Nice")
 def save():
     global save
     if combo_filter2.get()=="cake":
