@@ -86,7 +86,7 @@ def cake():
             btn_cake4.config(text=f"gilas-cake = {d}")        
         btn_cakekharid.config(text=f"soma {a} apple va {b} orange cake va {c} banana-cake va {d} gilas cake darid")
 # --------------------------------------------------------------------------------------------------
-    if combo_filter2.get()=="cake":
+    if combo_filter.get()=="cake":
         
         cake_root = Toplevel(root)
         cake_root.geometry("400x700")
@@ -220,7 +220,7 @@ def drink():
             btn_drink4.config(text=f"gilas-cake = {h}")        
         btn_drinkkharid.config(text=f"soma {e} apple va {f} orange cake va {g} banana-cake va {h} gilas cake darid")
 # --------------------------------------------------------------------------------------------------
-    if combo_filter2.get()=="drink":
+    if combo_filter.get()=="drink":
         
         drink_root = Toplevel(root)
         drink_root.geometry("400x700")
@@ -355,7 +355,7 @@ def biskiet():
         else:
             btn_biskiet4.config(text=f"gilas-biskiet = {l}")        
         btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {k} banana-cake va {l} gilas cake darid")
-    if combo_filter2.get()=="biskiet":
+    if combo_filter.get()=="biskiet":
         
         biskiet_root = Toplevel(root)
         biskiet_root.geometry("400x700")
@@ -412,8 +412,9 @@ def tanagholat():
         global m
         m = m-1
         if m < 0 :
+            m = 0
             btn_tanagholat1.config(text=f"anjil = {0}")
-            btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
+            btn_tanagholatkharid.config(text=f"soma {0} anjil va {n} fandogh va {o} peste va {p} badoom darid")
         else:
             btn_tanagholat1.config(text=f"anjil = {m}")
             btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
@@ -421,8 +422,9 @@ def tanagholat():
         global n
         n = n-1
         if n < 0 :
+            n = 0
             btn_tanagholat2.config(text=f"fandogh = {0}")
-            btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
+            btn_tanagholatkharid.config(text=f"soma {m} anjil va {0} fandogh va {o} peste va {p} badoom darid")
         else:
             btn_tanagholat2.config(text=f"fandogh = {n}")
             btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
@@ -430,8 +432,9 @@ def tanagholat():
         global o
         o = o-1
         if o < 0 :
+            o = 0
             btn_tanagholat3.config(text=f"peste = {0}")
-            btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
+            btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {0} peste va {p} badoom darid")
         else:
             btn_tanagholat3.config(text=f"peste = {o}")
             btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
@@ -440,6 +443,7 @@ def tanagholat():
         global p
         p = p-1
         if p < 0 :
+            p = 0
             btn_tanagholat4.config(text=f"badoom = {0}")
             btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
 
@@ -490,27 +494,27 @@ def tanagholat():
         else:
             btn_tanagholat4.config(text=f"badoom = {p}")        
         btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
-    if combo_filter2.get()=="tanagholat":
+    if combo_filter.get()=="tanagholat":
         
         tanagholat_root = Toplevel(root)
         tanagholat_root.geometry("400x700")
         tanagholat_root.title("tanagholat")
         tanagholat_root.config(background='#473E66')
         btn_tanagholat_title = Label(tanagholat_root, text='tanagholat Pack', bg="white")
-        btn_tanagholat1 = Label(tanagholat_root, text='anjil')
+        btn_tanagholat1 = Label(tanagholat_root, text='anjil = 0')
         btn_label_tanagholat1 = Button(tanagholat_root, text="+", command=tanagholat1)
         btn_label_tanagholatm = Button(tanagholat_root, text="-", command=tanagholatm)
 
-        btn_tanagholat2 = Label(tanagholat_root, text='fandogh')
+        btn_tanagholat2 = Label(tanagholat_root, text='fandogh = 0')
         btn_label_tanagholat2 = Button(tanagholat_root, text="+", command=tanagholat2)
         btn_label_tanagholatm2 = Button(tanagholat_root, text="-", command=tanagholatm2)
 
-        btn_tanagholat3 = Label(tanagholat_root, text='peste')
+        btn_tanagholat3 = Label(tanagholat_root, text='peste = 0')
         btn_label_tanagholat3 = Button(tanagholat_root, text="+", command=tanagholat3)
         btn_label_tanagholatm3 = Button(tanagholat_root, text="-", command=tanagholatm3)
 
 
-        btn_tanagholat4 = Label(tanagholat_root, text='badoom')
+        btn_tanagholat4 = Label(tanagholat_root, text='badoom = 0')
         btn_label_tanagholat4 = Button(tanagholat_root, text="+", command=tanagholat4)
         btn_label_tanagholatm4 = Button(tanagholat_root, text="-", command=tanagholatm4)
 
@@ -538,16 +542,16 @@ def tanagholat():
         print("Nice")
 def save():
     global save
-    if combo_filter2.get()=="cake":
+    if combo_filter.get()=="cake":
         combo_filter1.config(command=cake)
 
-    elif combo_filter2.get()=="biskiet":
+    elif combo_filter.get()=="biskiet":
         combo_filter1.config(command=biskiet)
 
-    elif combo_filter2.get()=="tanagholat":
+    elif combo_filter.get()=="tanagholat":
         combo_filter1.config(command=tanagholat)
 
-    elif combo_filter2.get()=="drink":
+    elif combo_filter.get()=="drink":
         combo_filter1.config(command=drink)
 
 a = 0
@@ -584,9 +588,7 @@ root.config(background='#473E66')
 
 combo_filter = Combobox(root , values=filter , state='readonly')
 combo_filter1 = Button(root, text="save", font=("", 10), command = save)
-combo_filter2= Entry(root, font=("", 10))
 
 combo_filter.place(x=130,y=20)
-combo_filter2.place(x=130,y=50)
 combo_filter1.place(x=180,y=80)
 mainloop()
