@@ -1,3 +1,4 @@
+
 from tkinter import *
 from tkinter.ttk import Combobox
 
@@ -8,41 +9,31 @@ def cake():
         global a
         a = a-1
         if a < 0 :
-            btn_cake1.config(text=f"apple cake = {0}")
-            btn_cakekharid.config(text=f"soma {0} apple va {b} orange cake va {c} banana-cake va {d} gilas cake darid")
-        else:
-            btn_cake1.config(text=f"apple cake = {a}")
-            btn_cakekharid.config(text=f"soma {a} apple va {b} orange cake va {c} banana-cake va {d} gilas cake darid")
+            a = 0
+        btn_cake1.config(text=f"apple cake = {a}")
+        btn_cakekharid.config(text=f"soma {a} apple va {b} orange cake va {c} banana-cake va {d} gilas cake darid")
     def cakem2():
         global b
         b = b-1
         if b < 0 :
-            btn_cake2.config(text=f"orange-cake = {0}")
-            btn_cakekharid.config(text=f"soma {a} apple va {0} orange cake va {c} banana-cake va {d} gilas cake darid")
-        else:
-            btn_cake2.config(text=f"orange-cake = {b}")
-            btn_cakekharid.config(text=f"soma {a} apple va {b} orange cake va {c} banana-cake va {d} gilas cake darid")
+            b=0
+        btn_cake2.config(text=f"orange-cake = {b}")
+        btn_cakekharid.config(text=f"soma {a} apple va {b} orange cake va {c} banana-cake va {d} gilas cake darid")
     def cakem3():
         global c
         c = c-1
         if c < 0 :
-            btn_cake3.config(text=f"banana-cake = {0}")
-            btn_cakekharid.config(text=f"soma {a} apple va {b} orange cake va {0} banana-cake va {d} gilas cake darid")
-        else:
-            btn_cake3.config(text=f"banana-cake = {c}")
-            btn_cakekharid.config(text=f"soma {a} apple va {b} orange cake va {c} banana-cake va {d} gilas cake darid")
+            c=0
+        btn_cake3.config(text=f"banana-cake = {c}")
+        btn_cakekharid.config(text=f"soma {a} apple va {b} orange cake va {c} banana-cake va {d} gilas cake darid")
 
     def cakem4():
         global d
         d = d-1
         if d < 0 :
-            btn_cake4.config(text=f"gilas-cake = {0}")
-            btn_cakekharid.config(text=f"soma {a} apple va {b} orange cake va {c} banana-cake va {0} gilas cake darid")
-
-        else:
-            btn_cake4.config(text=f"gilas-cake =  {d}")
-            btn_cakekharid.config(text=f"soma {a} apple va {b} orange cake va {c} banana-cake va {d} gilas cake darid")
-
+            d=0
+        btn_cake4.config(text=f"gilas-cake =  {d}")
+        btn_cakekharid.config(text=f"soma {a} apple va {b} orange cake va {c} banana-cake va {d} gilas cake darid")
 
 # --------------------------------------------------------------------------------------------------
     def cake1():
@@ -50,44 +41,31 @@ def cake():
         a = a+1
         if a < 0 :
             a=0
-
-            btn_cake1.config(text=f"apple cake = {a}")
-        else:
-            btn_cake1.config(text=f"apple cake = {a}")        
+        btn_cake1.config(text=f"apple cake = {a}")
         btn_cakekharid.config(text=f"soma {a} apple va {b} orange cake va {c} banana-cake va {d} gilas cake darid")
     def cake2():
         global b
         b = b+1
         if b < 0 :
             b=0
-
-            btn_cake2.config(text=f"orange-cake = {b}")
-        else:
-            btn_cake2.config(text=f"orange-cake = {b}")        
+        btn_cake2.config(text=f"orange-cake = {b}")
         btn_cakekharid.config(text=f"soma {a} apple va {b} orange cake va {c} banana-cake va {d} gilas cake darid")
     def cake3():
         global c
         c = c+1
         if c < 0 :
             c=0
-
-            btn_cake3.config(text=f"banana-cake = {c}")
-        else:
-            btn_cake3.config(text=f"banana-cake = {c}")        
+        btn_cake3.config(text=f"banana-cake = {c}")        
         btn_cakekharid.config(text=f"soma {a} apple va {b} orange cake va {c} banana-cake va {d} gilas cake darid")
     def cake4():
         global d
         d = d+1
         if d < 0 :
             d=0
-
-            btn_cake4.config(text=f"gilas-cake = {d}")
-        else:
-            btn_cake4.config(text=f"gilas-cake = {d}")        
+        btn_cake4.config(text=f"gilas-cake = {d}")        
         btn_cakekharid.config(text=f"soma {a} apple va {b} orange cake va {c} banana-cake va {d} gilas cake darid")
 # --------------------------------------------------------------------------------------------------
     if combo_filter.get()=="cake":
-        
         cake_root = Toplevel(root)
         cake_root.geometry("400x700")
         cake_root.title("Cakes")
@@ -141,50 +119,38 @@ def drink():
         global e
         e = e-1
         if e < 0 :
-            btn_drink1.config(text=f"apple cake = {0}")
-            btn_drinkkharid.config(text=f"soma {0} apple va {f} orange cake va {g} banana-cake va {h} gilas cake darid")
-        else:
-            btn_drink1.config(text=f"apple cake = {a}")
-            btn_drinkkharid.config(text=f"soma {e} apple va {f} orange cake va {g} banana-cake va {h} gilas cake darid")
+            e=0
+        btn_drink1.config(text=f"apple cake = {a}")
+        btn_drinkkharid.config(text=f"soma {e} apple va {f} orange cake va {g} banana-cake va {h} gilas cake darid")
     def drinkm2():
         global f
         f = f-1
         if f < 0 :
-            btn_drink2.config(text=f"orange-cake = {0}")
-            btn_drinkkharid.config(text=f"soma {e} apple va {0} orange cake va {g} banana-cake va {h} gilas cake darid")
-        else:
-            btn_drink2.config(text=f"orange-cake = {b}")
-            btn_drinkkharid.config(text=f"soma {e} apple va {f} orange cake va {g} banana-cake va {h} gilas cake darid")
+            f=0
+        btn_drink2.config(text=f"orange-cake = {b}")
+        btn_drinkkharid.config(text=f"soma {e} apple va {f} orange cake va {g} banana-cake va {h} gilas cake darid")
     def drinkm3():
         global g
         g = g-1
         if g < 0 :
-            btn_drink3.config(text=f"banana-cake = {0}")
-            btn_drinkkharid.config(text=f"soma {e} apple va {f} orange cake va {0} banana-cake va {h} gilas cake darid")
-        else:
-            btn_drink3.config(text=f"banana-cake = {c}")
-            btn_drinkkharid.config(text=f"soma {e} apple va {f} orange cake va {g} banana-cake va {h} gilas cake darid")
+            g=0
+        btn_drink3.config(text=f"banana-cake = {c}")
+        btn_drinkkharid.config(text=f"soma {e} apple va {f} orange cake va {g} banana-cake va {h} gilas cake darid")
 
     def drinkm4():
         global h
         h = h-1
         if h < 0 :
-            btn_drink4.config(text=f"gilas-cake = {0}")
-            btn_drinkkharid.config(text=f"soma {e} apple va {f} orange cake va {g} banana-cake va {0} gilas cake darid")
-
-        else:
-            btn_drink4.config(text=f"gilas-cake =  {h}")
-            btn_drinkkharid.config(text=f"soma {e} apple va {f} orange cake va {g} banana-cake va {h} gilas cake darid")
+            h=0
+        btn_drink4.config(text=f"gilas-cake =  {h}")
+        btn_drinkkharid.config(text=f"soma {e} apple va {f} orange cake va {g} banana-cake va {h} gilas cake darid")
 # --------------------------------------------------------------------------------------------------
     def drink1():
         global e
         e = e+1
         if e < 0 :
             e=0
-
-            btn_drink4.config(text=f"gilas-cake = {e}")
-        else:
-            btn_drink4.config(text=f"gilas-cake = {e}")        
+        btn_drink4.config(text=f"gilas-cake = {e}")        
         btn_drinkkharid.config(text=f"soma {e} apple va {f} orange cake va {g} banana-cake va {h} gilas cake darid")
 
     def drink2():
@@ -192,10 +158,7 @@ def drink():
         f = f+1
         if f < 0 :
             f=0
-
-            btn_drink4.config(text=f"gilas-cake = {f}")
-        else:
-            btn_drink4.config(text=f"gilas-cake = {f}")        
+        btn_drink4.config(text=f"gilas-cake = {f}")        
         btn_drinkkharid.config(text=f"soma {e} apple va {f} orange cake va {g} banana-cake va {h} gilas cake darid")
 
     def drink3():
@@ -203,10 +166,7 @@ def drink():
         g = g+1
         if g < 0 :
             g=0
-
-            btn_drink4.config(text=f"gilas-cake = {g}")
-        else:
-            btn_drink4.config(text=f"gilas-cake = {g}")        
+        btn_drink4.config(text=f"gilas-cake = {g}")        
         btn_drinkkharid.config(text=f"soma {e} apple va {f} orange cake va {g} banana-cake va {h} gilas cake darid")
 
     def drink4():
@@ -214,10 +174,7 @@ def drink():
         h = h+1
         if h < 0 :
             h=0
-
-            btn_drink4.config(text=f"gilas-cake = {h}")
-        else:
-            btn_drink4.config(text=f"gilas-cake = {h}")        
+        btn_drink4.config(text=f"gilas-cake = {h}")        
         btn_drinkkharid.config(text=f"soma {e} apple va {f} orange cake va {g} banana-cake va {h} gilas cake darid")
 # --------------------------------------------------------------------------------------------------
     if combo_filter.get()=="drink":
@@ -274,75 +231,53 @@ def biskiet():
         global i
         i = i-1
         if i < 0 :
-            btn_biskiet1.config(text=f"apple-cake = {0}")
-            btn_biskietkharid.config(text=f"soma {0} apple va {j} orange cake va {k} banana-cake va {l} gilas cake darid")
-
-        else:
-            btn_biskiet1.config(text=f"apple-cake =  {i}")
-            btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {k} banana-cake va {l} gilas cake darid")
+            i=0
+        btn_biskiet1.config(text=f"apple-cake =  {i}")
+        btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {k} banana-cake va {l} gilas cake darid")
     def biskietm2():
         global j
         j = j-1
         if j < 0 :
-            btn_biskiet2.config(text=f"orange-cake = {0}")
-            btn_biskietkharid.config(text=f"soma {i} apple va {0} orange cake va {k} banana-cake va {l} gilas cake darid")
-
-        else:
-            btn_biskiet2.config(text=f"orange-cake =  {j}")
-            btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {k} banana-cake va {l} gilas cake darid")
+            j=0
+        btn_biskiet2.config(text=f"orange-cake =  {j}")
+        btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {k} banana-cake va {l} gilas cake darid")
  
     def biskietm3():
         global k
         k = k-1
         if k < 0 :
-            btn_biskiet3.config(text=f"banana-cake = {0}")
-            btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {0} banana-cake va {0} gilas cake darid")
-
-        else:
-            btn_biskiet3.config(text=f"banana-cake =  {k}")
-            btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {k} banana-cake va {l} gilas cake darid")
+            k=0
+        btn_biskiet3.config(text=f"banana-cake =  {k}")
+        btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {k} banana-cake va {l} gilas cake darid")
     def biskietm4():
         global l
         l = l-1
         if l < 0 :
-            btn_biskiet4.config(text=f"gilas-cake = {0}")
-            btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {k} banana-cake va {0} gilas cake darid")
-
-        else:
-            btn_biskiet4.config(text=f"gilas-cake =  {l}")
-            btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {k} banana-cake va {l} gilas cake darid")
-   
-   
+            l=0
+        btn_biskiet4.config(text=f"gilas-cake =  {l}")
+        btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {k} banana-cake va {l} gilas cake darid")
+      
    
     def biskiet1():
         global i
         i = i+1
         if i < 0 :
             i=0
-
-            btn_biskiet1.config(text=f"apple-biskiet = {i}")
-        else:
-            btn_biskiet1.config(text=f"apple-biskiet = {i}")        
+        btn_biskiet1.config(text=f"apple-biskiet = {i}")        
         btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {k} banana-cake va {l} gilas cake darid")
     def biskiet2():
         global j
         j = j+1
         if j < 0 :
             j=0
-
-            btn_biskiet2.config(text=f"orange-cake = {j}")
-        else:
-            btn_biskiet2.config(text=f"orange-cake = {j}")        
+        btn_biskiet2.config(text=f"orange-cake = {j}")        
         btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {k} banana-cake va {l} gilas cake darid")
     def biskiet3():
         global k
         k = k+1
         if k < 0 :
             k=0
-
-            btn_biskiet3.config(text=f"banana-biskiet = {k}")
-        else:
-            btn_biskiet3.config(text=f"banana-biskiet = {k}")        
+        btn_biskiet3.config(text=f"banana-biskiet = {k}")        
         btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {k} banana-cake va {l} gilas cake darid")
 
     def biskiet4():
@@ -350,13 +285,9 @@ def biskiet():
         l = l+1
         if l < 0 :
             l=0
-
-            btn_biskiet4.config(text=f"gilas-biskiet = {l}")
-        else:
-            btn_biskiet4.config(text=f"gilas-biskiet = {l}")        
+        btn_biskiet4.config(text=f"gilas-biskiet = {l}")        
         btn_biskietkharid.config(text=f"soma {i} apple va {j} orange cake va {k} banana-cake va {l} gilas cake darid")
-    if combo_filter.get()=="biskiet":
-        
+    if combo_filter.get()=="biskiet":        
         biskiet_root = Toplevel(root)
         biskiet_root.geometry("400x700")
         biskiet_root.title("Biskiet")
@@ -413,45 +344,30 @@ def tanagholat():
         m = m-1
         if m < 0 :
             m = 0
-            btn_tanagholat1.config(text=f"anjil = {0}")
-            btn_tanagholatkharid.config(text=f"soma {0} anjil va {n} fandogh va {o} peste va {p} badoom darid")
-        else:
-            btn_tanagholat1.config(text=f"anjil = {m}")
-            btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
+        btn_tanagholat1.config(text=f"anjil = {m}")
+        btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
     def tanagholatm2():
         global n
         n = n-1
         if n < 0 :
             n = 0
-            btn_tanagholat2.config(text=f"fandogh = {0}")
-            btn_tanagholatkharid.config(text=f"soma {m} anjil va {0} fandogh va {o} peste va {p} badoom darid")
-        else:
-            btn_tanagholat2.config(text=f"fandogh = {n}")
-            btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
+        btn_tanagholat2.config(text=f"fandogh = {n}")
+        btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
     def tanagholatm3():
         global o
         o = o-1
         if o < 0 :
             o = 0
-            btn_tanagholat3.config(text=f"peste = {0}")
-            btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {0} peste va {p} badoom darid")
-        else:
-            btn_tanagholat3.config(text=f"peste = {o}")
-            btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
+        btn_tanagholat3.config(text=f"peste = {o}")
+        btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
 
     def tanagholatm4():
         global p
         p = p-1
         if p < 0 :
             p = 0
-            btn_tanagholat4.config(text=f"badoom = {0}")
-            btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
-
-        else:
-            btn_tanagholat4.config(text=f"badoom =  {p}")
-            btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
-
-        
+        btn_tanagholat4.config(text=f"badoom =  {p}")
+        btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
 
 
     def tanagholat1():
@@ -459,43 +375,30 @@ def tanagholat():
         m = m+1
         if m < 0 :
             m=0
-
-            btn_tanagholat1.config(text=f"ajil = {m}")
-        else:
-            btn_tanagholat1.config(text=f"ajil = {m}")        
+        btn_tanagholat1.config(text=f"ajil = {m}")        
         btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
     def tanagholat2():
         global n
         n = n+1
         if n < 0 :
             n=0
-
-            btn_tanagholat2.config(text=f"fandogh  = {n}")
-        else:
-            btn_tanagholat2.config(text=f"fandogh cake = {n}")        
+        btn_tanagholat2.config(text=f"fandogh cake = {n}")        
         btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh  va {o} peste va {p} badoom darid")
     def tanagholat3():
         global o
         o = o+1
         if o < 0 :
             o=0
-
-            btn_tanagholat3.config(text=f"peste = {o}")
-        else:
-            btn_tanagholat3.config(text=f"peste = {o}")        
+        btn_tanagholat3.config(text=f"peste = {o}")        
         btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
     def tanagholat4():
         global p
         p = p+1
         if p < 0 :
             p=0
-
-            btn_tanagholat4.config(text=f"badoom = {p}")
-        else:
-            btn_tanagholat4.config(text=f"badoom = {p}")        
+        btn_tanagholat4.config(text=f"badoom = {p}")        
         btn_tanagholatkharid.config(text=f"soma {m} anjil va {n} fandogh va {o} peste va {p} badoom darid")
-    if combo_filter.get()=="tanagholat":
-        
+    if combo_filter.get()=="tanagholat":        
         tanagholat_root = Toplevel(root)
         tanagholat_root.geometry("400x700")
         tanagholat_root.title("tanagholat")
